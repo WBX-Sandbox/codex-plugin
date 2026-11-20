@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "wbx-sandbox": {
+      "type": "http",
+      "url": "https://sandbox.wbx.cz/mcp",
+      "note": "Remote WBX Sandbox MCP server. It signs you in to your WBX Sandbox account with OAuth on first use."
+    }
+  }
+}

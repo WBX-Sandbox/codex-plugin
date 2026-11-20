@@ -1,0 +1,50 @@
+{
+  "name": "wbx-sandbox",
+  "version": "1.0.0",
+  "description": "Run code in isolated Linux microVM sandboxes: commands, Python and JavaScript, files, a headless browser and background jobs, with persistent named workspaces, network controls and spending limits.",
+  "author": {
+    "name": "WBX Sandbox",
+    "email": "info@wbx.cz",
+    "url": "https://sandbox.wbx.cz"
+  },
+  "homepage": "https://sandbox.wbx.cz",
+  "repository": "https://github.com/WBX-Sandbox/codex-plugin",
+  "license": "MIT",
+  "keywords": [
+    "sandbox",
+    "code-execution",
+    "python",
+    "javascript",
+    "microvm",
+    "firecracker",
+    "background-jobs",
+    "mcp"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "WBX Sandbox",
+    "shortDescription": "Run code in isolated sandboxes",
+    "longDescription": "WBX Sandbox gives the agent an isolated Linux computer of its own: a Firecracker microVM with its own kernel, disk and network policy, running on servers in the EU. Run Python, JavaScript or shell commands and get the real output, read and write files, serve a small web app on a private HTTPS link, automate a headless browser, and hand longer work over as background jobs or batches. Idle sandboxes fall asleep instead of being deleted, so a named sandbox keeps its files between sessions. Internet access can be limited or switched off, and account limits, job price limits and budgets keep usage under control. You need a WBX Sandbox account; you sign in with it when you connect.",
+    "developerName": "WBX Sandbox",
+    "category": "Developer Tools",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://sandbox.wbx.cz",
+    "privacyPolicyURL": "https://sandbox.wbx.cz/privacy",
+    "termsOfServiceURL": "https://sandbox.wbx.cz/terms",
+    "defaultPrompt": [
+      "Run this project's tests in a WBX sandbox",
+      "Make a small web page in a sandbox and give me a link",
+      "Start a background job and show its summary"
+    ],
+    "brandColor": "#2952CC",
+    "brandColorDark": "#E8A317",
+    "composerIcon": "./assets/logo.png",
+    "logo": "./assets/logo.png",
+    "screenshots": []
+  }
+}

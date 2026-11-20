@@ -1,0 +1,20 @@
+{
+  "name": "wbx-sandbox",
+  "interface": {
+    "displayName": "WBX Sandbox"
+  },
+  "plugins": [
+    {
+      "name": "wbx-sandbox",
+      "source": {
+        "source": "local",
+        "path": "./plugins/wbx-sandbox"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    }
+  ]
+}
