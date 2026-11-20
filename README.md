@@ -7,7 +7,29 @@ This repository is a Codex plugin marketplace with one plugin, `wbx-sandbox`. It
 - the remote **WBX Sandbox MCP server** (`https://sandbox.wbx.cz/mcp`, sign-in with OAuth),
 - the **sandbox-workflows** skill – when to use a quick command, a background job or a named sandbox, and how to keep cost and side effects under control.
 
-You need a WBX Sandbox account: <https://sandbox.wbx.cz>.
+You need a WBX Sandbox account: <https://sandbox.wbx.cz> (start free, no card required).
+
+## What Codex can do with it
+
+[WBX Sandbox](https://sandbox.wbx.cz) gives the agent an isolated Linux computer of its own: a
+Firecracker microVM with its own kernel, disk and network policy, on servers in the EU. Nothing
+runs on your machine. Through the MCP server Codex can:
+
+- **create sandboxes** from templates (Python, data analysis, browser, Node.js and more), with
+  full internet, an allowlist of destinations or no network, and optionally a public IPv6 address
+- **run commands and code** (Python, JavaScript, bash) and **read, write, list and delete files**
+- **serve a web app** and get its HTTPS URL, protected by an access token
+- **keep a named workspace** – sandboxes from the assistant fall asleep after 10 minutes without
+  commands instead of being destroyed; files are kept and the next command wakes them up
+- **hand over longer work** as background jobs or batches with a price limit, wait for them on the
+  server, read a compact log digest with recognised test results, download result files and get
+  the job's execution receipt
+- **check spending limits** and the available compute classes
+- **see and control a Linux desktop** (beta, only for teams where Desktop & Computer Use is
+  enabled on request)
+
+All tools: [MCP server and tools](https://sandbox.wbx.cz/docs/mcp) ·
+Pricing: <https://sandbox.wbx.cz/pricing>
 
 ## Install
 
@@ -60,7 +82,7 @@ plugins/wbx-sandbox/
 
 ## Links
 
-- Website and documentation: <https://sandbox.wbx.cz>
+- Website: <https://sandbox.wbx.cz> · Documentation: <https://sandbox.wbx.cz/docs>
 - Support: <https://sandbox.wbx.cz/support>
 - Privacy: <https://sandbox.wbx.cz/privacy> · Terms: <https://sandbox.wbx.cz/terms>
 
